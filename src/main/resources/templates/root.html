@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+    <!--    <meta charset="UTF-8">-->
+    <title>長崎日大高校新聞部WEBサイト</title>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta http-equiv="Content-Script-Type" content="text/javascript">
+    <meta name="description" content="長崎日本大学学園に関するニュースをお届け！学園の旬な話題を掲載しています。">
+    <meta property="og:site_name" content="長崎日大高校新聞部WEBサイト">
+    <meta property="og:image" content="https://-_______-">
+    <meta property="og:description" content="長崎日本大学学園に関するニュースをお届け！学園の旬な話題を掲載しています。">
+    <meta property="og:title" content="長崎日大高校新聞部WEBサイト">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="msapplication-TileImage" content="https://-------">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="twitter:description" content="長崎日本大学学園に関するニュースをお届け！学園の旬な話題を掲載しています。">
+    <meta name="twitter:image" content="https://=====">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="長崎日大高校新聞部WEBサイト">
+    <meta name="twitter:site" content="@長崎日大新聞部">
+
+    {% include "style.html" %}
+</head>
+    <body class="flex flex-col min-h-screen">
+
+        <main class="flex-grow">
+            <div class="flex flex-col h-full">
+
+                <!-- Header Menu-->
+                {% include "header.html" %}
+
+                <div class="flex flex-wrap h-full pt-3 justify-center">
+
+                    <!-- Main -->
+                    <div class="md:w-2/3">
+                        {% if template == "index" %}
+                        {% include "index.html" %}
+                        {% endif %}
+                    </div>
+
+                    <!-- Side -->
+                    <div class="flex flex-col w-full md:w-52 lg:w-72">
+                        {% include "side.html" %}
+                    </div>
+
+                </div>
+
+            </div>
+        </main>
+
+    {% include "footer.html" %}
+    </body>
+</html>
