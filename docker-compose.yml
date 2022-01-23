@@ -1,0 +1,9 @@
+version: '2'
+services:
+  portalpage:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    image: dockerhub.booyah.dev/nnp-portalpage
+    ports:
+      - 8080:8080
