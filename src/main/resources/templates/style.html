@@ -2,27 +2,43 @@
 <link href="https://cdn.jsdelivr.net/npm/daisyui@1.14.1/dist/full.css" rel="stylesheet" type="text/css" />
 
 <style>
-    #nav {
+
+    .nav ul{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    .nav li{
         list-style: none;
-        overflow: hidden;
     }
-
-    #nav li {
-        text-align: center;
-        float: left;
-        line-height: 30px;
-        margin-right: 2px;
-    }
-
-    #nav li:hover {
-        background-color: #3e0100;
-    }
-
-    #nav li a {
+    .nav a{
+        display: block;
+        padding: 10px;
+        border-right: none;
         text-decoration: none;
-        color: #fff;
-        font-weight: bold;
-        padding: 20px;
+    }
+    .nav li:last-child a{
+    }
+
+    @media(max-width:600px){
+        .nav ul{
+            flex-wrap: wrap;
+        }
+        .nav li{
+            width: 50%;
+            margin: 0;
+        }
+        .nav a{
+            border-bottom: none;
+        }
+        .nav li:last-child a{
+            border-right: none;
+        }
+    }
+
+    .nav li:hover {
+        background-color: #3e0100;
     }
 
     .headline-red	{ filter: alpha(
@@ -36,7 +52,7 @@
         color:#000;
         border-bottom: solid 2px #FF4040;
         border-left: solid 8px #FF4040;
-        font-size:11pt;
+        font-size:13pt;
     }
     .headline-blue	{ filter: alpha(
             startX=0, startY=0, finishX=500, finishY=0 ,
@@ -49,7 +65,7 @@
         color:#000;
         border-bottom: solid 2px #4086ff;
         border-left: solid 8px #4086ff;
-        font-size:11pt;
+        font-size:13pt;
     }
     .headline-sky	{ filter: alpha(
             startX=0, startY=0, finishX=500, finishY=0 ,
@@ -62,7 +78,7 @@
         color:#000;
         border-bottom: solid 2px #7096d9;
         border-left: solid 8px #7096d9;
-        font-size:11pt;
+        font-size:13pt;
     }
     .headline-green	{ filter: alpha(
             startX=0, startY=0, finishX=500, finishY=0 ,
@@ -75,7 +91,7 @@
         color:#000;
         border-bottom: solid 2px #2eb65e;
         border-left: solid 8px #2eb65e;
-        font-size:11pt;
+        font-size:13pt;
     }
     .headline-orange	{ filter: alpha(
             startX=0, startY=0, finishX=500, finishY=0 ,
@@ -88,7 +104,7 @@
         color:#000;
         border-bottom: solid 2px #fa8d33;
         border-left: solid 8px #fa8d33;
-        font-size:11pt;
+        font-size:13pt;
     }
     .headline-yellow	{ filter: alpha(
             startX=0, startY=0, finishX=500, finishY=0 ,
@@ -101,7 +117,7 @@
         color:#000;
         border-bottom: solid 2px #ffd400;
         border-left: solid 8px #ffd400;
-        font-size:11pt;
+        font-size:13pt;
     }
     .headline-purple	{ filter: alpha(
             startX=0, startY=0, finishX=500, finishY=0 ,
@@ -114,7 +130,7 @@
         color:#000;
         border-bottom: solid 2px #742eb6;
         border-left: solid 8px #742eb6;
-        font-size:11pt;
+        font-size:13pt;
     }
 
     .headline-pink	{ filter: alpha(
@@ -128,7 +144,7 @@
         color:#000;
         border-bottom: solid 2px #b62eab;
         border-left: solid 8px #b62eab;
-        font-size:11pt;
+        font-size:13pt;
     }
 
     .headline-gray	{ filter: alpha(
@@ -142,7 +158,7 @@
         color:#000;
         border-bottom: solid 2px #333333;
         border-left: solid 8px #333333;
-        font-size:11pt;
+        font-size:13pt;
     }
 
 
