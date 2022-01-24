@@ -15,6 +15,7 @@ data class commentArticle(var id: String, var articleId: String, var name: Strin
 data class column(var id: String, var title: String, var body: String, var comment: String)
 data class commentColumn(var id: String, var columnId: String, var name: String, var body: String)
 data class writer(var id: String, var name: String, var uname: String, var password: String, var email: String, var body: String)
+data class image(var id: String, var articleId: String, var columnId: String, var caption: String, var url: String)
 
 class MonDB {
     var client: MongoClient? = null
