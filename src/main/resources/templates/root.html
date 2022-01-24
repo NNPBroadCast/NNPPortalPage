@@ -35,17 +35,18 @@
                 <!-- Header Menu-->
                 {% include "header.html" %}
 
-                <div class="flex flex-wrap h-full pt-3 justify-center">
+                <div class="flex flex-wrap h-full justify-center">
 
                     <!-- Main -->
-                    <div class="md:w-2/3">
+                    <div class="md:w-2/3 max-w-2xl bg-white pt-3">
+                        {% include "search.html" %}
                         {% if template == "index" %}
                         {% include "index.html" %}
                         {% endif %}
                     </div>
 
                     <!-- Side -->
-                    <div class="flex flex-col w-full md:w-52 lg:w-72">
+                    <div class="flex flex-col w-full md:w-52 lg:w-72 bg-white pt-3">
                         {% include "side.html" %}
                     </div>
 
